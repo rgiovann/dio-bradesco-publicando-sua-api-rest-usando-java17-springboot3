@@ -14,7 +14,6 @@ delete from curso_disciplina;
 delete from aluno_curso;
 delete from professor;
 delete from aula;
-delete from empresa;
 delete from categoria;
 delete from foto_curso;
 -- -----------------------------------------------------
@@ -32,7 +31,6 @@ alter table aluno auto_increment = 1;
 alter table disciplina auto_increment = 1;
 alter table professor auto_increment = 1;
 alter table aula auto_increment = 1;
-alter table empresa auto_increment = 1;
 alter table categoria auto_increment = 1;
 
 -- -----------------------------------------------------
@@ -134,16 +132,6 @@ values(1,1,1,1,'http://link-aula/aula1','http://link-videoaula/videoaula1'),
       (2,1,2,1,'http://link-aula/aula2','http://link-videoaula/videoaula2'),     
       (3,2,5,2,'http://link-aula/aula3','http://link-videoaula/videoaula3'),     
       (4,3,10,3,'http://link-aula/aula4','http://link-videoaula/videoaula4');    
-      
-      
-      
-insert into empresa( empresa_id, empresa_cnpj,empresa_nome,empresa_logradouro,empresa_cep,
-                     empresa_bairro,empresa_cidade,empresa_estado,empresa_email,empresa_contato)
-values( 1,'33.592.510/0001-54','Vale do Rio Doce','Rua São Paulo','89030-230','Vila Nova',
-       'Blumenau','Santa Catarina','faleVale@valeriodoce.com.br','7833232335'),  
-      ( 2,'38.456.510/0001-34','Companhia Eletrica 3 Rios','Avenida João 23','87030-230','Saco Grande',
-       'Itajubá','Minas Gerais','sac@c3rios.com.br','3433226334'),   
-      ( 3,'18.321.910/0001-28','Tecelaria Santo Antonio','Rua Amazonas','34030-700','Alto São Franciso',
-       'São Martinho','Pernambuco','joa.tecelaria@gmail.com.br','6744226334');                
+
  
  

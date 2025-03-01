@@ -154,20 +154,4 @@ CREATE TABLE IF NOT EXISTS `aula` (
     ON UPDATE NO ACTION)    
 ENGINE = InnoDB charset=UTF8MB4;
 
--- -----------------------------------------------------
--- Table `empresa`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `empresa` (
-  `empresa_id` INT NOT NULL AUTO_INCREMENT,
-  `empresa_cnpj` VARCHAR(25) NOT NULL,
-  `empresa_nome` VARCHAR(45) NOT NULL,
-  `empresa_cep` VARCHAR(15) NOT NULL,
-  `empresa_logradouro` VARCHAR(45) NULL,
-  `empresa_bairro` VARCHAR(45) NULL,
-  `empresa_cidade` VARCHAR(45) NULL,
-  `empresa_estado` VARCHAR(45) NULL,
-  `empresa_email` VARCHAR(45) NULL,
-  `empresa_contato` VARCHAR(45) NULL,
-  PRIMARY KEY (`empresa_id`))
-ENGINE = InnoDB charset=UTF8MB4;
  
